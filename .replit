@@ -1,0 +1,10 @@
+modules = ["c-clang14"]
+compile = ["sh", "-c", "gcc -o altar main.c"]
+run =  ["sh", "-c", "./altar" ]
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+compile = ["sh", "-c", "gcc -o altar main.c"]
+run =  ["sh", "-c", "./altar" ]
